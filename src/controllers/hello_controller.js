@@ -4,6 +4,7 @@ export default class extends Controller {
   static targets = [ 'name' ]
 
   greet() {
+    console.log(this);
     console.log(`Hello, ${this.name}`);
   }
 

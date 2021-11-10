@@ -13,7 +13,9 @@
   </div>
   <div data-controller="clipboard">
     PIN: <textarea data-clipboard-target="source" readonly />828309</textarea>
-    <button data-action="clipboard#copy">Copy to Clipboard</button>
+    <button data-action="clipboard#copy" data-clipboard-supported-class="clipboard--supported" class="clipboard-button">
+      Copy to Clipboard
+    </button>
   </div>
 </body>
 </html>
