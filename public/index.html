@@ -10,12 +10,29 @@
   <div data-controller="hello">
     <input type="text" data-hello-target="name">
     <button data-action="click->hello#greet">Greet</button>
-  </div>
+  </div> <!-- first example -->
   <div data-controller="clipboard">
     PIN: <textarea data-clipboard-target="source" readonly />828309</textarea>
     <button data-action="clipboard#copy" data-clipboard-supported-class="clipboard--supported" class="clipboard-button">
       Copy to Clipboard
     </button>
-  </div>
+  </div> <!-- copy to clipboard -->
+  <div data-controller="slideshow" data-slideshow-index-value="1">
+    <button data-action="slideshow#previous"><</button>
+    <button data-action="slideshow#next">></button>
+
+    <div data-slideshow-target="slide">
+      Slide 1
+    </div>
+    <div data-slideshow-target="slide">
+      Slide 2
+    </div>
+    <div data-slideshow-target="slide">
+      Slide 3
+    </div>
+    <div data-slideshow-target="slide">
+      Slide 4
+    </div>
+  </div> <!-- Slideshow -->
 </body>
 </html>
