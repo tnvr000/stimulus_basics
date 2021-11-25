@@ -21,12 +21,12 @@ body {
   transform: translate(-50%, -50%);
 }
 
-#newtask {
+.new-task {
   position: relative;
   padding: 30px 20px;
 }
 
-#newtask input {
+.new-task input {
   width: 75%;
   height: 45px;
   padding: 12px;
@@ -39,16 +39,16 @@ body {
   border: 2px solid #d1d3d4;
 }
 
-#newtask input:focus {
+.new-task input:focus {
   outline: none;
   border-color: #0d75ec;
 }
 
-#newtask button {
+.new-task button {
   position: relative;
   float: right;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1rem;
   background-color: #0d75ec;
   border: none;
   color: #fff;
@@ -60,7 +60,7 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-#tasks {
+.tasks {
   border-radius: 10px;
   width: 100%;
   position: relative;
@@ -95,6 +95,7 @@ body {
   cursor: pointer;
   outline: none;
   height: 100%;
-  width: 40px;
   border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 1rem
 }

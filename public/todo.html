@@ -10,11 +10,11 @@
 </head>
 <body>
   <div class="container" data-controller="todo">
-    <div id="newtask">
-      <input type="text" placeholder="Task to be done">
-      <button id="push">Add</button>
+    <div class="new-task">
+      <input type="text" placeholder="Task to be done" data-todo-target="taskToAdd">
+      <button data-action="todo#addTask">Add</button>
     </div>
-    <div id="tasks">
+    <div class="tasks" data-todo-target="tasksContainer">
 
     </div>
   </div>
